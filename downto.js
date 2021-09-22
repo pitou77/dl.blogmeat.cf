@@ -23,6 +23,9 @@ $(document).ready(function(){
     $("#btyes").click(function(){
       window.open(autosafe+fixlink);
     });
+    $("#btno").click(function(){
+      window.open("https://www.blogmeat.cf/");
+    });
   });
 }); 
 
