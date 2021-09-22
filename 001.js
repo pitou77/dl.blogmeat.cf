@@ -25,5 +25,6 @@ if (urlasli != urlDcd) {
 
 document.getElementById('yesno').innerHTML = "<button id='btyes'>YES</button><br/><button id='btno'></button>";
 
-
+}else{
+  window.location="https://www.blogmeat.cf/";
 }
