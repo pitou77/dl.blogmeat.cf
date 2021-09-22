@@ -17,8 +17,8 @@ var link7an = Base64.decode(uriHdcd);
 var fixlink = encodeURIComponent(link7an);
 
 var autosafe = "http://ouo.io/qs/GGytQtE4?s=";
-$("#btyes").click(function(){
-window.open(autosafe+fixlink);
+$('#yesno').each(function(){
+  $("#btyes").click(function(){window.open(autosafe+fixlink);})
 )};
 
 if (urlasli != urlDcd) {
