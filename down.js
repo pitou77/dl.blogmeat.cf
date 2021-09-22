@@ -28,7 +28,7 @@ $(document).ready(function(){
 
 if (urlasli != urlDcd) {
 
-document.getElementById('yesno').innerHTML = "<button id='btyes'>YES</button><br/><button id='btno'></button>";
+document.getElementById('yesno').innerHTML = "<button id='btyes'>YES</button><br/><button id='btno'>NO</button>";
 
 }else{
   window.location="https://www.blogmeat.cf/";
