@@ -12,6 +12,8 @@ return string;}}
 
 var urlasli = window.location.href;
 var urlDcd = urlasli.replace(/http.+#/,"https://landing.puisi62.eu.org/?m=1&article=");
+var urlDcdDesktop = urlasli.replace(/http.+#/,"landing.puisi62.eu.org/?m=1&article=");
+var urlDcdDesktopwithouo = "http://ouo.io/qs/GGytQtE4?s="+encodeURIComponent(urlDcdDesktop);
 
 $(document).ready(function(){
   $('#yesno').each(function(){
@@ -22,11 +24,20 @@ $(document).ready(function(){
       window.open("https://www.blogmeat.cf/");
     });
   });
+  $('#yesnoDesktop').each(function(){
+    $("#btyesDesktop").click(function(){
+      window.open(urlDcdDesktopwithouo);
+    });
+    $("#btnoDesktop").click(function(){
+      window.open("https://www.blogmeat.cf/");
+    });
+  });  
 }); 
 
 if (urlasli != urlDcd) {
 
 document.getElementById('yesno').innerHTML = "<button id='btyes'>YES</button><br/><button id='btno'>NO</button>";
+document.getElementById('yesnoDesktop').innerHTML = "<button id='btyesDesktop'>YES</button><br/><button id='btnoDesktop'>NO</button>";  
 
 }else{
   window.location="https://www.blogmeat.cf/";
