@@ -19,7 +19,7 @@ $(document).ready(function(){
       window.location="http://ouo.io/qs/GGytQtE4?s="+encodeURIComponent(urlDcd);
     });
     $("#btno").click(function(){
-      window.open("https://www.blogmeat.cf/");
+      window.location="https://www.blogmeat.cf/";
     });
   });
 }); 
