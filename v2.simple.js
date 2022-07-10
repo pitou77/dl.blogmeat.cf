@@ -16,7 +16,7 @@ var urlDcdec1 = urlasli.replace(/http.+R0cHM65/,""),urlDcdec2 = Base64.decode(ur
 $(document).ready(function(){
   $('#yesno').each(function(){
     $("#btyes").click(function(){
-      window.open("http://ouo.io/qs/GGytQtE4?s="+urlDcd);
+      window.location="http://ouo.io/qs/GGytQtE4?s="+encodeURIComponent(urlDcd);
     });
     $("#btno").click(function(){
       window.open("https://www.blogmeat.cf/");
